@@ -439,7 +439,6 @@ function setupProductPage() {
   });
 }
 
-
 function setupProductsPage() {
   const productsPage = document.querySelector(".products-page");
   if (!productsPage) return;
@@ -1014,10 +1013,94 @@ function renderLikedProducts() {
   });
 }
 
+function setupFAQ() {
+  const faqPage = document.querySelector(".faq-page");
+  if (!faqPage) return;
+
+  const faqItems = document.querySelectorAll(".faq-item");
+  const searchInput = document.getElementById("faq-search-input");
+  const categoryButtons = document.querySelectorAll(".faq-category");
+  const emptyState = document.querySelector(".faq-empty");
+
+  let activeCategory = "all";
+
+  faqItems.forEach((item) => {
+    const question = item.querySelector(".faq-question");
+
+    question.addEventListener("click", () => {
+      const isActive = item.classList.contains("active");
+
+      faqItems.forEach((i) => {
+        i.classList.remove("active");
+        i.querySelector(".faq-icon").textContent = "+";
+      });
+
+      if (!isActive) {
+        item.classList.add("active");
+        item.querySelector(".faq-icon").textContent = "−";
+      }
+    });
+  });
+
+  categoryButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      categoryButtons.forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+
+      activeCategory = btn.dataset.category;
+      filterFAQ();
+    });
+  });
+
+  searchInput.addEventListener("input", filterFAQ);
+
+  function filterFAQ() {
+    const query = searchInput.value.toLowerCase().trim();
+    let visibleCount = 0;
+
+    faqItems.forEach((item) => {
+      const questionText = item.querySelector("h3").textContent.toLowerCase();
+      const answerText = item
+        .querySelector(".faq-answer")
+        .textContent.toLowerCase();
+      const category = item.dataset.category;
+
+      const matchCategory =
+        activeCategory === "all" || category === activeCategory;
+      const matchSearch =
+        questionText.includes(query) || answerText.includes(query);
+
+      if (matchCategory && matchSearch) {
+        item.style.display = "block";
+        visibleCount++;
+      } else {
+        item.style.display = "none";
+        item.classList.remove("active");
+        item.querySelector(".faq-icon").textContent = "+";
+      }
+    });
+
+    document.querySelectorAll(".faq-section").forEach((section) => {
+      const items = section.querySelectorAll(".faq-item");
+      const hasVisible = Array.from(items).some(
+        (i) => i.style.display !== "none",
+      );
+      section.style.display = hasVisible ? "block" : "none";
+    });
+
+    if (visibleCount === 0) {
+      emptyState.classList.remove("hidden");
+    } else {
+      emptyState.classList.add("hidden");
+    }
+  }
+}
+
 document.addEventListener("DOMContentLoaded", function () {
   console.log("DOM yuklandi");
 
   setupMobileMenu();
+  setupFAQ();
 
   const hasProductContainers =
     document.getElementById("trending-products") ||

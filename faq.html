@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechHouse | Ko'p So'raladigan Savollar</title>
+    <link rel="stylesheet" href="./style.css" />
+
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="container nav">
+        <div class="logo">Tech<span class="logo_section">House</span></div>
+        <nav class="menu">
+          <a href="./index.html">Asosiy</a>
+          <a href="./products.html">Mahsulotlar</a>
+          <a href="./about.html">Biz haqimizda</a>
+          <a href="./prices.html">Narxlar</a>
+          <a href="./faq.html">FAQ</a>
+        </nav>
+        <div class="actions">
+          <a href="./products.html">
+            <button class="action action-search" type="button">
+              <img src="./assets/search.png" alt="Qidiruv" />
+              <span>Qidiruv</span>
+            </button>
+          </a>
+          <div class="action-search-box">
+            <input
+              class="header-search-input"
+              type="text"
+              placeholder="Mahsulot qidiring..."
+            />
+            <button class="header-search-close" type="button">✕</button>
+          </div>
+          <a class="action" href="./checkout.html">
+            <img src="./assets/shopping-cart.png" alt="Savatcha" />
+            <span>Savatcha</span>
+            <span class="action-badge cart-count is-hidden">0</span>
+          </a>
+          <a class="action" href="./liked.html">
+            <img src="./assets/like.png" alt="Sevimlilar" />
+            <span>Sevimlilar</span>
+            <span class="action-badge fav-count is-hidden">0</span>
+          </a>
+
+          <a class="action" href="./index.html">
+            <img src="./assets/user.png" alt="Kirish" />
+            <span>Kirish</span>
+          </a>
+        </div>
+        <div class="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </header>
+
+    <div class="mobile-menu">
+      <a href="./index.html">Asosiy</a>
+      <a href="./products.html">Mahsulotlar</a>
+      <a href="./about.html">Biz haqimizda</a>
+      <a href="./faq.html">FAQ</a>
+      <div class="mobile-actions">
+        <a href="./products.html">Qidiruv</a>
+        <a href="./index.html">Kirish</a>
+        <a href="./liked.html">Sevimlilar</a>
+        <a href="./checkout.html">Savatcha</a>
+      </div>
+    </div>
+
+    <main class="faq-page">
+      <section class="container">
+        <div class="faq-hero">
+          <h1>Ko'p So'raladigan <span>Savollar</span></h1>
+          <p>
+            Bizning xizmatlarimiz va mahsulotlarimiz haqida barcha
+            savollaringizga javob toping
+          </p>
+          <div class="faq-search">
+            <div class="faq-search-box">
+              <img src="../assets/search.png" alt="Qidiruv" />
+              <input
+                type="text"
+                id="faq-search-input"
+                placeholder="Savolni qidiring..."
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-categories">
+          <button class="faq-category active" data-category="all">
+            Barchasi
+          </button>
+          <button class="faq-category" data-category="buyurtma">
+            Buyurtma berish
+          </button>
+          <button class="faq-category" data-category="tolov">
+            To'lov usullari
+          </button>
+          <button class="faq-category" data-category="yetkazish">
+            Yetkazib berish
+          </button>
+          <button class="faq-category" data-category="qaytarish">
+            Qaytarish
+          </button>
+          <button class="faq-category" data-category="kafolat">Kafolat</button>
+        </div>
+
+        <div class="faq-container">
+          <!-- Buyurtma berish -->
+          <div class="faq-section" data-category="buyurtma">
+            <h2 class="faq-section-title">Buyurtma berish</h2>
+
+            <div class="faq-item" data-category="buyurtma">
+              <div class="faq-question">
+                <h3>Qanday qilib buyurtma berishim mumkin?</h3>
+                <div class="faq-icon">+</div>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Buyurtma berish juda oson! Kerakli mahsulotni tanlang,
+                  "Savatchaga qo'shish" tugmasini bosing. Keyin savatchangizga
+                  o'ting va "Buyurtma berish" tugmasini bosing. Shaxsiy
+                  ma'lumotlaringizni kiriting va to'lov usulini tanlang.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item" data-category="buyurtma">
+              <div class="faq-question">
+                <h3>Buyurtmani bekor qilish mumkinmi?</h3>
+                <div class="faq-icon">+</div>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Ha, buyurtma jo'natilgunga qadar uni bekor qilishingiz mumkin.
+                  Buyurtmangiz allaqachon jo'natilgan bo'lsa, qaytarish
+                  shartlarimiz asosida qaytarib olishingiz mumkin.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item" data-category="buyurtma">
+              <div class="faq-question">
+                <h3>Buyurtma holatini qanday kuzatishim mumkin?</h3>
+                <div class="faq-icon">+</div>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Buyurtma bergandan keyin sizga SMS va email orqali kuzatuv
+                  raqami yuboriladi. Shu orqali buyurtmangiz holatini real
+                  vaqtda kuzatishingiz mumkin.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- To'lov usullari -->
+          <div class="faq-section" data-category="tolov">
+            <h2 class="faq-section-title">To'lov usullari</h2>
+
+            <div class="faq-item" data-category="tolov">
+              <div class="faq-question">
+                <h3>Qanday to'lov usullarini qabul qilasiz?</h3>
+                <div class="faq-icon">+</div>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Biz naqd pul, bank kartalari (Humo, UzCard, Visa, MasterCard),
+                  onlayn to'lovlar (Click, Payme) va bo'lib to'lash imkoniyatini
+                  taklif qilamiz.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item" data-category="tolov">
+              <div class="faq-question">
+                <h3>Bo'lib to'lash qanday ishlaydi?</h3>
+                <div class="faq-icon">+</div>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Bo'lib to'lash xizmati orqali mahsulotni 3, 6, 12 yoki 24 oyga
+                  bo'lib to'lashingiz mumkin. Dastlabki to'lov 0% dan boshlanadi
+                  va hech qanday qo'shimcha komissiya olinmaydi.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item" data-category="tolov">
+              <div class="faq-question">
+                <h3>To'lov xavfsizligi ta'minlanganmi?</h3>
+                <div class="faq-icon">+</div>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Ha, barcha onlayn to'lovlar xavfsiz SSL shifrlash
+                  texnologiyasi orqali amalga oshiriladi. Sizning bank
+                  ma'lumotlaringiz to'liq muhofaza qilinadi.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Yetkazib berish -->
+          <div class="faq-section" data-category="yetkazish">
+            <h2 class="faq-section-title">Yetkazib berish</h2>
+
+            <div class="faq-item" data-category="yetkazish">
+              <div class="faq-question">
+                <h3>Yetkazib berish qancha vaqt oladi?</h3>
+                <div class="faq-icon">+</div>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Toshkent shahri bo'ylab 1-2 ish kuni ichida, O'zbekistonning
+                  boshqa hududlariga 3-5 ish kuni ichida yetkazib beriladi.
+                  Buyurtma rasmiylashtirish vaqtiga qarab.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item" data-category="yetkazish">
+              <div class="faq-question">
+                <h3>Yetkazib berish narxi qancha?</h3>
+                <div class="faq-icon">+</div>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Toshkent shahri ichida yetkazib berish 30,000 so'm. 5,000,000
+                  so'mdan ortiq buyurtmalarda yetkazib berish bepul. Boshqa
+                  viloyatlarga yetkazib berish narxi mintaqaga qarab farq
+                  qiladi.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item" data-category="yetkazish">
+              <div class="faq-question">
+                <h3>Yetkazib berish vaqtini tanlash mumkinmi?</h3>
+                <div class="faq-icon">+</div>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Ha, buyurtma rasmiylashtirish jarayonida sizga qulay vaqtni
+                  tanlashingiz mumkin. Bizning operatorlarimiz siz bilan aloqaga
+                  chiqib aniq vaqtni kelishib oladilar.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Qaytarish -->
+          <div class="faq-section" data-category="qaytarish">
+            <h2 class="faq-section-title">Qaytarish va almashtirish</h2>
+
+            <div class="faq-item" data-category="qaytarish">
+              <div class="faq-question">
+                <h3>Mahsulotni qaytarish mumkinmi?</h3>
+                <div class="faq-icon">+</div>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Ha, mahsulot xarid qilingan kundan boshlab 14 kun ichida
+                  qaytarish mumkin. Mahsulot ishlatilmagan, original qadoqda va
+                  hujjatlari saqlanishi kerak.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item" data-category="qaytarish">
+              <div class="faq-question">
+                <h3>Qaytarilgan mahsulot uchun pul qachon qaytariladi?</h3>
+                <div class="faq-icon">+</div>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Mahsulot qaytarilganidan keyin 7-10 ish kuni ichida pul
+                  sizning bank hisobingizga yoki kartangizga qaytariladi.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item" data-category="qaytarish">
+              <div class="faq-question">
+                <h3>Mahsulotni boshqasiga almashtirishim mumkinmi?</h3>
+                <div class="faq-icon">+</div>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Ha, mahsulotning rangi, o'lchami yoki modelini almashtirish
+                  mumkin. Agar narx farqi bo'lsa, qo'shimcha to'lov yoki
+                  qaytarim amalga oshiriladi.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kafolat -->
+          <div class="faq-section" data-category="kafolat">
+            <h2 class="faq-section-title">Kafolat xizmati</h2>
+
+            <div class="faq-item" data-category="kafolat">
+              <div class="faq-question">
+                <h3>Kafolat muddati qancha?</h3>
+                <div class="faq-icon">+</div>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Barcha mahsulotlar uchun rasmiy ishlab chiqaruvchi kafolati
+                  beriladi. Kafolat muddati mahsulot turiga qarab 1 yildan 3
+                  yilgacha.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item" data-category="kafolat">
+              <div class="faq-question">
+                <h3>Kafolat xizmati nimalarni qamrab oladi?</h3>
+                <div class="faq-icon">+</div>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Kafolat ishlab chiqarish nuqsonlarini qamrab oladi.
+                  Foydalanuvchi xatosi, mexanik shikastlanish yoki noto'g'ri
+                  ishlatish natijasida yuzaga kelgan nosozliklar kafolat
+                  doirasiga kirmaydi.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item" data-category="kafolat">
+              <div class="faq-question">
+                <h3>Kafolat xizmatidan qanday foydalanish mumkin?</h3>
+                <div class="faq-icon">+</div>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Mahsulot nosoz bo'lsa, biz bilan bog'laning. Sizning buyurtma
+                  raqamingiz va kafolat guvohnomangiz orqali bepul ta'mirlash
+                  yoki almashtirish xizmatidan foydalanishingiz mumkin.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-empty hidden">
+            <h3>Hech narsa topilmadi</h3>
+            <p>
+              Qidiruv so'rovingizga mos savol topilmadi. Boshqa kalit so'zlar
+              bilan qidiring.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-main">
+          <div class="footer-brand">
+            <div class="logo footer-logo">
+              Tech<span class="logo_section">House</span>
+            </div>
+            <p class="footer-description">
+              Zamonaviy va ishonchli maishiy texnika do'koni. Yuqori sifat,
+              qulay narxlar va tezkor yetkazib berish.
+            </p>
+            <div class="footer-social">
+              <a href="#" class="social-icon">
+                <img src="/assets/facebook.png" alt="Facebook" />
+              </a>
+              <a href="#" class="social-icon">
+                <img src="/assets/instagram.png" alt="Instagram" />
+              </a>
+              <a href="#" class="social-icon">
+                <img src="/assets/telegram.png" alt="Telegram" />
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <h4>Tezkor havolalar</h4>
+            <ul>
+              <li><a href="./index.html">Asosiy</a></li>
+              <li><a href="./products.html">Mahsulotlar</a></li>
+              <li><a href="./about.html">Biz haqimizda</a></li>
+              <li><a href="./faq.html">FAQ</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4>Mijozlar uchun</h4>
+            <ul>
+              <li><a href="#">Mening hisobim</a></li>
+              <li><a href="#">Buyurtmalar tarixi</a></li>
+              <li><a href="./liked.html">Sevimlilar</a></li>
+              <li><a href="./faq.html">Kafolat</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <h4>Bog'lanish</h4>
+            <div class="contact-item">
+              <img src="/assets/phone.png" alt="Telefon" />
+              <div>
+                <strong>Telefon raqam</strong>
+                <p>+998 97 424 94 84</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <img src="/assets/mail.png" alt="Email" />
+              <div>
+                <strong>Email manzil</strong>
+                <p>info@techhouse.uz</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 TechHouse. Barcha huquqlar himoyalangan.</p>
+          <div class="copyright">
+            <div class="footer-legal">
+              <a href="#">Maxfiylik siyosati</a>
+              <a href="#">Foydalanish shartlari</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
