@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechHouse | Mahsulot</title>
+    <link rel="stylesheet" href="../style.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="container nav">
+        <div class="logo">Tech<span class="logo_section">House</span></div>
+        <nav class="menu">
+          <a href="./index.html">Asosiy</a>
+          <a href="./products.html">Mahsulotlar</a>
+          <a href="./about.html">Biz haqimizda</a>
+          <a href="./prices.html">Narxlar</a>
+        </nav>
+        <div class="actions">
+          <button class="action action-search" type="button">
+            <img src="../assets/search.png" alt="Qidiruv" />
+            <span>Qidiruv</span>
+          </button>
+          <div class="action-search-box">
+            <input
+              class="header-search-input"
+              type="text"
+              placeholder="Mahsulot qidiring..."
+            />
+            <button class="header-search-close" type="button">✕</button>
+          </div>
+          <a class="action" href="./checkout.html">
+            <img src="../assets/shopping-cart.png" alt="Savatcha" />
+            <span>Savatcha</span>
+            <span class="action-badge cart-count is-hidden">0</span>
+          </a>
+          <a class="action" href="./liked.html">
+            <img src="../assets/like.png" alt="Sevimlilar" />
+            <span>Sevimlilar</span>
+            <span class="action-badge fav-count is-hidden">0</span>
+          </a>
+          <a class="action" href="./index.html">
+            <img src="../assets/user.png" alt="Kirish" />
+            <span>Kirish</span>
+          </a>
+        </div>
+        <div class="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </header>
+
+    <div class="mobile-menu">
+      <a href="./index.html">Asosiy</a>
+      <a href="./products.html">Mahsulotlar</a>
+      <a href="./about.html">Biz haqimizda</a>
+      <a href="./prices.html">Narxlar</a>
+
+      <div class="mobile-actions">
+        <a href="./index.html">Qidiruv</a>
+        <a href="./index.html">Kirish</a>
+        <a href="./liked.html">Sevimlilar</a>
+        <a href="./checkout.html">Savatcha</a>
+      </div>
+    </div>
+
+    <main
+      class="product-page"
+      data-id="201"
+      data-name="ASUS ProArt Studiobook Pro 16"
+      data-price="25000000"
+      data-image="../assets/product.png"
+    >
+      <section class="container">
+        <div class="breadcrumb">
+          Asosiy / Noutbuklar / ASUS ProArt Studiobook Pro 16
+        </div>
+        <div class="product-hero">
+          <div class="product-gallery">
+            <div class="product-main">
+              <img
+                src="../assets/product.png"
+                alt="ASUS ProArt Studiobook Pro 16"
+              />
+            </div>
+            <div class="product-thumbs">
+              <button class="active" data-image="../assets/product.png">
+                <img src="../assets/product.png" alt="Ko'rinish 1" />
+              </button>
+              <button data-image="../assets/product_2.png">
+                <img src="../assets/product_2.png" alt="Ko'rinish 2" />
+              </button>
+              <button data-image="../assets/product.png">
+                <img src="../assets/product.png" alt="Ko'rinish 3" />
+              </button>
+              <button data-image="../assets/product_2.png">
+                <img src="../assets/product_2.png" alt="Ko'rinish 4" />
+              </button>
+            </div>
+          </div>
+
+          <div class="product-details">
+            <h1>
+              ASUS ProArt Studiobook Pro 16 W7600H3A-OLED-L741X, 16.0", UHD+,
+              Intel Core i7
+            </h1>
+            <p class="product-subtitle">
+              Kuchli grafika, OLED ekran va professional dizayn. Ish, ijod va
+              multimediyalar uchun.
+            </p>
+
+            <div class="color-block">
+              <span class="label">Ranglar:</span>
+              <span class="selected-color">Space Gray</span>
+              <div class="color-swatches">
+                <button
+                  class="color-swatch active"
+                  style="background: #d1d5db"
+                  data-label="Space Gray"
+                ></button>
+                <button
+                  class="color-swatch"
+                  style="background: #fef3c7"
+                  data-label="Warm Sand"
+                ></button>
+                <button
+                  class="color-swatch"
+                  style="background: #fde68a"
+                  data-label="Light Gold"
+                ></button>
+                <button
+                  class="color-swatch"
+                  style="background: #f3f4f6"
+                  data-label="Silver"
+                ></button>
+                <button
+                  class="color-swatch"
+                  style="background: #111827"
+                  data-label="Black"
+                ></button>
+              </div>
+            </div>
+
+            <div class="price-block">
+              <div class="price">25.000.000 so'm</div>
+              <div class="installment">
+                <span class="monthly-price">8.500.000 so'm / 3 oy</span>
+              </div>
+              <div class="installment-options">
+                <button
+                  class="installment-option active"
+                  data-monthly="8.500.000 so'm / 3 oy"
+                >
+                  3 oy
+                </button>
+                <button
+                  class="installment-option"
+                  data-monthly="4.500.000 so'm / 6 oy"
+                >
+                  6
+                </button>
+                <button
+                  class="installment-option"
+                  data-monthly="2.600.000 so'm / 12 oy"
+                >
+                  12
+                </button>
+                <button
+                  class="installment-option"
+                  data-monthly="1.900.000 so'm / 18 oy"
+                >
+                  18
+                </button>
+                <button
+                  class="installment-option"
+                  data-monthly="1.500.000 so'm / 24 oy"
+                >
+                  24
+                </button>
+              </div>
+            </div>
+            <div class="payment-type">
+              <span class="label">To'lov turi:</span>
+
+              <div class="payment-options">
+                <button class="payment-option active" data-type="cash">
+                  Naqd to'lov
+                </button>
+                <button class="payment-option" data-type="installment">
+                  Bo'lib to'lash
+                </button>
+              </div>
+            </div>
+
+            <div class="qty-row">
+              <span class="label">Miqdor:</span>
+              <div class="qty-control">
+                <button class="qty-btn" data-step="-1">-</button>
+                <input class="qty-input" type="number" value="1" min="1" />
+                <button class="qty-btn" data-step="1">+</button>
+              </div>
+            </div>
+
+            <div class="product-actions">
+              <button class="btn primary product-buy">Sotib olish</button>
+              <button class="btn outline product-cart">Savatchaga</button>
+            </div>
+
+            <div class="product-badges">
+              <div class="badge-item">Yetkazib berish: 5 kun ichida</div>
+              <div class="badge-item">Qaytarish va almashtirish: 15 kun</div>
+              <div class="badge-item">24/7 texnik yordam</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container product-specs">
+        <h2 class="section-title">Mahsulot xususiyatlari</h2>
+        <div class="specs-list">
+          <div class="specs-row">
+            <span>Turi</span>
+            <span>Noutbuk</span>
+          </div>
+          <div class="specs-row">
+            <span>RAM</span>
+            <span>16 GB</span>
+          </div>
+          <div class="specs-row">
+            <span>SSD</span>
+            <span>1000 GB</span>
+          </div>
+          <div class="specs-row">
+            <span>Protsessor turi</span>
+            <span>Intel Core i7-12700H</span>
+          </div>
+          <div class="specs-row">
+            <span>Protsessor tezligi</span>
+            <span>2.3 - 4.7 GHz</span>
+          </div>
+          <div class="specs-row">
+            <span>Displey o'lchami</span>
+            <span>16.0"</span>
+          </div>
+          <div class="specs-row specs-extra is-hidden">
+            <span>Displey turi</span>
+            <span>OLED, Touchscreen, 120Hz</span>
+          </div>
+          <div class="specs-row specs-extra is-hidden">
+            <span>Displey resolution</span>
+            <span>2880 x 1620</span>
+          </div>
+          <div class="specs-row specs-extra is-hidden">
+            <span>Videokarta turi</span>
+            <span>Intel Arc A370M Graphics</span>
+          </div>
+          <div class="specs-row specs-extra is-hidden">
+            <span>Grafik xotira</span>
+            <span>4 GB GDDR6</span>
+          </div>
+          <div class="specs-row specs-extra is-hidden">
+            <span>Veb-kamera</span>
+            <span>720p + IR</span>
+          </div>
+          <div class="specs-row specs-extra is-hidden">
+            <span>OS</span>
+            <span>Windows 11 Pro</span>
+          </div>
+        </div>
+        <button class="specs-toggle" data-open="false">
+          Ko'proq ko'rsatish
+        </button>
+      </section>
+
+      <section class="container product-reviews">
+        <div class="reviews-header">
+          <h2 class="section-title">Mijozlar fikri</h2>
+          <div class="reviews-controls">
+            <button class="review-prev">‹</button>
+            <button class="review-next">›</button>
+          </div>
+        </div>
+        <div class="reviews-track">
+          <div class="review-card">
+            <img src="../assets/man.png" alt="Mijoz" />
+            <strong>Eshmat</strong>
+            <div class="review-stars">★★★★★</div>
+            <p>
+              "TechHouse orqali texnika oldim, juda tez yetkazib berishdi va
+              sifati a'lo!"
+            </p>
+          </div>
+          <div class="review-card">
+            <img src="../assets/man.png" alt="Mijoz" />
+            <strong>Malika</strong>
+            <div class="review-stars">★★★★★</div>
+            <p>"Mahsulot dizayni va ishlashi juda zo'r. Tavsiya qilaman!"</p>
+          </div>
+          <div class="review-card">
+            <img src="../assets/man.png" alt="Mijoz" />
+            <strong>Shohruh</strong>
+            <div class="review-stars">★★★★★</div>
+            <p>"Operatorlar muloyim, yetkazib berish aniq vaqtida. Rahmat!"</p>
+          </div>
+          <div class="review-card">
+            <img src="../assets/man.png" alt="Mijoz" />
+            <strong>Aziza</strong>
+            <div class="review-stars">★★★★☆</div>
+            <p>"Xizmat sifati yaxshi, narxlar ham mos. Yana xarid qilaman."</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="container related-products">
+        <h2 class="section-title">Boshqa mahsulotlar</h2>
+        <div class="related-grid">
+          <div
+            class="related-card"
+            data-id="301"
+            data-name="Honor X9c 8/256GB"
+            data-price="4573000"
+          >
+            <img src="../assets/product.png" alt="Honor X9c" />
+            <h4>Honor X9c 8/256GB</h4>
+            <span>4 573 000 so'm</span>
+            <button class="mini-cart">Savatchaga</button>
+          </div>
+          <div
+            class="related-card"
+            data-id="302"
+            data-name="Honor X9c 8/256GB"
+            data-price="4573000"
+          >
+            <img src="../assets/product.png" alt="Honor X9c" />
+            <h4>Honor X9c 8/256GB</h4>
+            <span>4 573 000 so'm</span>
+            <button class="mini-cart">Savatchaga</button>
+          </div>
+          <div
+            class="related-card"
+            data-id="303"
+            data-name="Honor X9c 8/256GB"
+            data-price="4573000"
+          >
+            <img src="../assets/product.png" alt="Honor X9c" />
+            <h4>Honor X9c 8/256GB</h4>
+            <span>4 573 000 so'm</span>
+            <button class="mini-cart">Savatchaga</button>
+          </div>
+          <div
+            class="related-card"
+            data-id="304"
+            data-name="Honor X9c 8/256GB"
+            data-price="4573000"
+          >
+            <img src="../assets/product.png" alt="Honor X9c" />
+            <h4>Honor X9c 8/256GB</h4>
+            <span>4 573 000 so'm</span>
+            <button class="mini-cart">Savatchaga</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-main">
+          <div class="footer-brand">
+            <div class="logo footer-logo">
+              Tech<span class="logo_section">House</span>
+            </div>
+            <p class="footer-description">
+              Zamonaviy va ishonchli maishiy texnika do'koni. Yuqori sifat,
+              qulay narxlar va tezkor yetkazib berish.
+            </p>
+            <div class="footer-social">
+              <a href="#" class="social-icon">
+                <img src="/assets/facebook.png" alt="Facebook" />
+              </a>
+              <a href="#" class="social-icon">
+                <img src="/assets/instagram.png" alt="Instagram" />
+              </a>
+              <a href="#" class="social-icon">
+                <img src="/assets/telegram.png" alt="Telegram" />
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <h4>Tezkor havolalar</h4>
+            <ul>
+              <li><a href="./index.html">Asosiy</a></li>
+              <li><a href="./products.html">Mahsulotlar</a></li>
+              <li><a href="./about.html">Biz haqimizda</a></li>
+              <li><a href="./prices.html">Narxlar</a></li>
+              <li><a href="./index.html">Chegirmalar</a></li>
+              <li><a href="./index.html">Yangi kelganlar</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4>Mijozlar uchun</h4>
+            <ul>
+              <li><a href="#">Mening hisobim</a></li>
+              <li><a href="#">Buyurtmalar tarixi</a></li>
+              <li><a href="./liked.html">Sevimlilar</a></li>
+              <li><a href="#">Kafolat</a></li>
+              <li><a href="#">Yetkazib berish</a></li>
+              <li><a href="#">Qaytarish</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <h4>Bog'lanish</h4>
+            <div class="contact-item">
+              <img src="/assets/phone.png" alt="Telefon" />
+              <div>
+                <strong>Telefon raqam</strong>
+                <p>+998 97 424 94 84</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <img src="/assets/mail.png" alt="Email" />
+              <div>
+                <strong>Email manzil</strong>
+                <p>info@techhouse.uz</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <img src="/assets/location.png" alt="Manzil" />
+              <div>
+                <strong>Ofis manzili</strong>
+                <p>Toshkent sh.</p>
+              </div>
+            </div>
+            <div class="footer-newsletter">
+              <h5>Yangiliklardan xabardor bo'ling</h5>
+              <div class="newsletter-form">
+                <input type="email" placeholder="Email manzilingiz" />
+                <button type="submit">Obuna bo'lish</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 TechHouse. Barcha huquqlar himoyalangan.</p>
+
+          <div class="copyright">
+            <div class="footer-legal">
+              <a href="#">Maxfiylik siyosati</a>
+              <a href="#">Foydalanish shartlari</a>
+              <a href="#">Cookie sozlamalari</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

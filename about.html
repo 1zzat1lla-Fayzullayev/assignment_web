@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechHouse - Biz haqimizda</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="container nav">
+        <div class="logo">Tech<span class="logo_section">House</span></div>
+        <nav class="menu">
+          <a href="./index.html">Asosiy</a>
+          <a href="./products.html">Mahsulotlar</a>
+          <a href="#">Biz haqimizda</a>
+          <a href="./prices.html">Narxlar</a>
+        </nav>
+        <div class="actions">
+          <button class="action action-search" type="button">
+            <img src="./assets/search.png" alt="Qidiruv" />
+            <span>Qidiruv</span>
+          </button>
+          <div class="action-search-box">
+            <input
+              class="header-search-input"
+              type="text"
+              placeholder="Mahsulot qidiring..."
+            />
+            <button class="header-search-close" type="button">✕</button>
+          </div>
+          <a class="action" href="./checkout.html">
+            <img src="./assets/shopping-cart.png" alt="Savatcha" />
+            <span>Savatcha</span>
+            <span class="action-badge cart-count is-hidden">0</span>
+          </a>
+          <a class="action" href="./liked.html">
+            <img src="./assets/like.png" alt="Sevimlilar" />
+            <span>Sevimlilar</span>
+            <span class="action-badge fav-count is-hidden">0</span>
+          </a>
+
+          <a class="action" href="./index.html">
+            <img src="./assets/user.png" alt="Kirish" />
+            <span>Kirish</span>
+          </a>
+        </div>
+        <div class="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </header>
+
+    <div class="mobile-menu">
+      <a href="./index.html">Asosiy</a>
+      <a href="./products.html">Mahsulotlar</a>
+      <a href="#">Biz haqimizda</a>
+      <a href="./prices.html">Narxlar</a>
+
+      <div class="mobile-actions">
+        <a href="./index.html">Qidiruv</a>
+        <a href="./index.html">Kirish</a>
+        <a href="./liked.html">Sevimlilar</a>
+        <a href="./checkout.html">Savatcha</a>
+      </div>
+    </div>
+
+    <main class="container">
+      <section class="page-header">
+        <h1>Biz <span>haqimizda</span></h1>
+        <p>
+          TechHouse — zamonaviy texnologiyalarni ishonchli, qulay va hamyonbop
+          narxlarda taqdim etuvchi onlayn texnika do'koni.
+        </p>
+      </section>
+
+      <section class="about">
+        <div>
+          <h2>Bizning maqsadimiz</h2>
+          <p>
+            Bizning asosiy maqsadimiz — har bir mijoz uchun sifatli
+            texnologiyalarni oson va tez yetkazib berish. TechHouse doimiy
+            ravishda mahsulotlar sifatini, xizmat ko'rsatish darajasini va
+            foydalanuvchi tajribasini yaxshilab boradi.
+          </p>
+          <p>
+            Biz rasmiy ishlab chiqaruvchilar bilan hamkorlik qilamiz va barcha
+            mahsulotlarga kafolat taqdim etamiz.
+          </p>
+        </div>
+        <img
+          src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1174&q=80"
+          alt="TechHouse do'koni"
+        />
+      </section>
+
+      <section class="stats">
+        <div class="stat">
+          <h3>5+</h3>
+          <p>Yillik tajriba</p>
+        </div>
+        <div class="stat">
+          <h3>10 000+</h3>
+          <p>Mamnun mijozlar</p>
+        </div>
+        <div class="stat">
+          <h3>500+</h3>
+          <p>Mahsulotlar</p>
+        </div>
+        <div class="stat">
+          <h3>24/7</h3>
+          <p>Qo'llab-quvvatlash</p>
+        </div>
+      </section>
+
+      <section class="values">
+        <h2>Bizning ustunliklarimiz</h2>
+        <div class="values-grid">
+          <div class="value">
+            <h4>Sifat kafolati</h4>
+            <p>Faqat sertifikatlangan va original mahsulotlar.</p>
+          </div>
+          <div class="value">
+            <h4>Tezkor yetkazib berish</h4>
+            <p>Buyurtmalar qisqa vaqt ichida manzilingizga yetkaziladi.</p>
+          </div>
+          <div class="value">
+            <h4>Qulay to'lov</h4>
+            <p>Bo'lib to'lash va turli to'lov usullari mavjud.</p>
+          </div>
+          <div class="value">
+            <h4>Mijozlar ishonchi</h4>
+            <p>Biz uchun mijoz roziligi eng muhim qadriyatdir.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer-main">
+          <div class="footer-brand">
+            <div class="logo footer-logo">
+              Tech<span class="logo_section">House</span>
+            </div>
+            <p class="footer-description">
+              Zamonaviy va ishonchli maishiy texnika do'koni. Yuqori sifat,
+              qulay narxlar va tezkor yetkazib berish.
+            </p>
+            <div class="footer-social">
+              <a href="#" class="social-icon">
+                <img src="/assets/facebook.png" alt="Facebook" />
+              </a>
+              <a href="#" class="social-icon">
+                <img src="/assets/instagram.png" alt="Instagram" />
+              </a>
+              <a href="#" class="social-icon">
+                <img src="/assets/telegram.png" alt="Telegram" />
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <h4>Tezkor havolalar</h4>
+            <ul>
+              <li><a href="./index.html">Asosiy</a></li>
+              <li><a href="./products.html">Mahsulotlar</a></li>
+              <li><a href="./about.html">Biz haqimizda</a></li>
+              <li><a href="./prices.html">Narxlar</a></li>
+              <li><a href="./index.html">Chegirmalar</a></li>
+              <li><a href="./index.html">Yangi kelganlar</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4>Mijozlar uchun</h4>
+            <ul>
+              <li><a href="#">Mening hisobim</a></li>
+              <li><a href="#">Buyurtmalar tarixi</a></li>
+              <li><a href="./liked.html">Sevimlilar</a></li>
+              <li><a href="#">Kafolat</a></li>
+              <li><a href="#">Yetkazib berish</a></li>
+              <li><a href="#">Qaytarish</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <h4>Bog'lanish</h4>
+            <div class="contact-item">
+              <img src="/assets/phone.png" alt="Telefon" />
+              <div>
+                <strong>Telefon raqam</strong>
+                <p>+998 97 424 94 84</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <img src="/assets/mail.png" alt="Email" />
+              <div>
+                <strong>Email manzil</strong>
+                <p>info@techhouse.uz</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <img src="/assets/location.png" alt="Manzil" />
+              <div>
+                <strong>Ofis manzili</strong>
+                <p>Toshkent sh.</p>
+              </div>
+            </div>
+            <div class="footer-newsletter">
+              <h5>Yangiliklardan xabardor bo'ling</h5>
+              <div class="newsletter-form">
+                <input type="email" placeholder="Email manzilingiz" />
+                <button type="submit">Obuna bo'lish</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 TechHouse. Barcha huquqlar himoyalangan.</p>
+
+          <div class="copyright">
+            <div class="footer-legal">
+              <a href="#">Maxfiylik siyosati</a>
+              <a href="#">Foydalanish shartlari</a>
+              <a href="#">Cookie sozlamalari</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

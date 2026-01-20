@@ -1,0 +1,32 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Honor X9c 256GB Titanium Black",
+      "price": "4 573 000 so'm",
+      "image": "../assets/product.png",
+      "nasiya": "381 084 so'mdan / 18 oy"
+    },
+    {
+      "id": 2,
+      "name": "iPhone 14 Pro 256GB",
+      "price": "12 500 000 so'm",
+      "image": "https://pngimg.com/d/iphone_14_PNG6.png",
+      "nasiya": "381 084 so'mdan / 18 oy"
+    },
+    {
+      "id": 3,
+      "name": "Samsung QLED TV 55\"",
+      "price": "8 900 000 so'm",
+      "image": "../assets/product.png",
+      "nasiya": "381 084 so'mdan / 18 oy"
+    },
+    {
+      "id": 4,
+      "name": "Artel muzlatgich",
+      "price": "5 200 000 so'm",
+      "image": "../assets/product.png",
+      "nasiya": "381 084 so'mdan / 18 oy"
+    }
+  ]
+}

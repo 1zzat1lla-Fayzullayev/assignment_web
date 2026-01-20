@@ -1,0 +1,32 @@
+{
+  "products": [
+    {
+      "id": 5,
+      "name": "Artel Konditsioner",
+      "price": "5 200 000 so'm",
+      "nasiya": "381 084 so'mdan / 18 oy",
+      "image": "../assets/product.png"
+    },
+    {
+      "id": 6,
+      "name": "LG Side by Side Muzlatgich",
+      "price": "22 000 000 so'm",
+      "nasiya": "381 084 so'mdan / 18 oy",
+      "image": "../assets/product.png"
+    },
+     {
+      "id": 7,
+      "name": "LG Side by Side Muzlatgich",
+      "price": "22 000 000 so'm",
+      "nasiya": "381 084 so'mdan / 18 oy",
+      "image": "../assets/product.png"
+    },
+     {
+      "id": 8,
+      "name": "LG Side by Side Muzlatgich",
+      "price": "22 000 000 so'm",
+      "nasiya": "381 084 so'mdan / 18 oy",
+      "image": "../assets/product.png"
+    }
+  ]
+}

@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechHouse | To'lov</title>
+    <link rel="stylesheet" href="../style.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="container nav">
+        <div class="logo">Tech<span class="logo_section">House</span></div>
+        <nav class="menu">
+          <a href="./index.html">Asosiy</a>
+          <a href="./products.html">Mahsulotlar</a>
+          <a href="./about.html">Biz haqimizda</a>
+          <a href="./prices.html">Narxlar</a>
+        </nav>
+        <div class="actions">
+          <button class="action action-search" type="button">
+            <img src="../assets/search.png" alt="Qidiruv" />
+            <span>Qidiruv</span>
+          </button>
+          <div class="action-search-box">
+            <input
+              class="header-search-input"
+              type="text"
+              placeholder="Mahsulot qidiring..."
+            />
+            <button class="header-search-close" type="button">✕</button>
+          </div>
+          <a class="action" href="./checkout.html">
+            <img src="../assets/shopping-cart.png" alt="Savatcha" />
+            <span>Savatcha</span>
+            <span class="action-badge cart-count is-hidden">0</span>
+          </a>
+          <a class="action" href="./liked.html">
+            <img src="../assets/like.png" alt="Sevimlilar" />
+            <span>Sevimlilar</span>
+            <span class="action-badge fav-count is-hidden">0</span>
+          </a>
+          <a class="action" href="../index.html">
+            <img src="../assets/user.png" alt="Kirish" />
+            <span>Kirish</span>
+          </a>
+        </div>
+        <div class="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </header>
+
+    <div class="mobile-menu">
+      <a href="./index.html">Asosiy</a>
+      <a href="./products.html">Mahsulotlar</a>
+      <a href="./about.html">Biz haqimizda</a>
+      <a href="./prices.html">Narxlar</a>
+
+      <div class="mobile-actions">
+        <a href="../index.html">Qidiruv</a>
+        <a href="../index.html">Kirish</a>
+        <a href="./liked.html">Sevimlilar</a>
+        <a href="./checkout.html">Savatcha</a>
+      </div>
+    </div>
+
+    <main class="checkout-page">
+      <div class="container checkout-grid">
+        <section class="checkout-card">
+          <h1 class="page-title">To'lov</h1>
+          <p class="page-subtitle">Yetkazib berish ma'lumotlari</p>
+
+          <div class="delivery-options">
+            <button class="delivery-option active" data-method="delivery">
+              Yetkazib berish
+            </button>
+            <button class="delivery-option" data-method="pickup">
+              Olib ketish
+            </button>
+          </div>
+
+          <div class="form-section">
+            <div class="form-field full">
+              <label for="full-name">To'liq ism *</label>
+              <input
+                id="full-name"
+                type="text"
+                placeholder="To'liq ismingizni kiriting"
+              />
+            </div>
+            <div class="form-field full">
+              <label for="email">Email manzil *</label>
+              <input
+                id="email"
+                type="email"
+                placeholder="Email manzilingizni kiriting"
+              />
+            </div>
+            <div class="form-field full">
+              <label for="phone">Telefon raqam *</label>
+              <input
+                id="phone"
+                type="tel"
+                placeholder="Telefon raqamingizni kiriting"
+              />
+            </div>
+
+            <div class="address-fields">
+              <div class="form-field full">
+                <label for="country">Davlat *</label>
+                <select id="country">
+                  <option value="">Davlatni tanlang</option>
+                  <option value="uz">O'zbekiston</option>
+                  <option value="kz">Qozog'iston</option>
+                  <option value="kg">Qirg'iziston</option>
+                </select>
+              </div>
+              <div class="form-grid">
+                <div class="form-field">
+                  <label for="city">Shahar</label>
+                  <input
+                    id="city"
+                    type="text"
+                    placeholder="Shaharni kiriting"
+                  />
+                </div>
+                <div class="form-field">
+                  <label for="region">Viloyat / Hudud</label>
+                  <input
+                    id="region"
+                    type="text"
+                    placeholder="Viloyatni kiriting"
+                  />
+                </div>
+                <div class="form-field">
+                  <label for="zip">Pochta indeksi</label>
+                  <input id="zip" type="text" placeholder="Pochta indeksi" />
+                </div>
+              </div>
+            </div>
+
+            <label class="terms">
+              <input class="terms-checkbox" type="checkbox" checked />
+              Men Foydalanish shartlari va qoidalarini o'qidim va ularga roziman
+            </label>
+          </div>
+        </section>
+
+        <section class="checkout-card summary-card">
+          <h2 class="summary-title">Savatingizni ko'rib chiqing</h2>
+          <div class="summary-items"></div>
+          <div class="summary-empty is-hidden">
+            Savatcha bo'sh. Mahsulot tanlab qo'shing.
+          </div>
+
+          <div class="coupon-row">
+            <input
+              class="coupon-input"
+              type="text"
+              placeholder="Chegirma kodi"
+            />
+            <button class="coupon-apply">Qo'llash</button>
+          </div>
+          <div class="coupon-message"></div>
+
+          <div class="summary-totals" data-subtotal="0" data-shipping="0">
+            <div class="summary-line">
+              <span>Oraliq summa</span>
+              <span class="summary-subtotal">0 so'm</span>
+            </div>
+            <div class="summary-line">
+              <span>Yetkazib berish</span>
+              <span class="summary-shipping">0 so'm</span>
+            </div>
+            <div class="summary-line">
+              <span>Chegirma</span>
+              <span class="summary-discount">-0 so'm</span>
+            </div>
+            <div class="summary-line total">
+              <span>Jami</span>
+              <span class="summary-total">0 so'm</span>
+            </div>
+          </div>
+
+          <button class="btn primary pay-btn">Hozir to'lash</button>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-main">
+          <div class="footer-brand">
+            <div class="logo footer-logo">
+              Tech<span class="logo_section">House</span>
+            </div>
+            <p class="footer-description">
+              Zamonaviy va ishonchli maishiy texnika do'koni. Yuqori sifat,
+              qulay narxlar va tezkor yetkazib berish.
+            </p>
+            <div class="footer-social">
+              <a href="#" class="social-icon">
+                <img src="/assets/facebook.png" alt="Facebook" />
+              </a>
+              <a href="#" class="social-icon">
+                <img src="/assets/instagram.png" alt="Instagram" />
+              </a>
+              <a href="#" class="social-icon">
+                <img src="/assets/telegram.png" alt="Telegram" />
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <h4>Tezkor havolalar</h4>
+            <ul>
+              <li><a href="./index.html">Asosiy</a></li>
+              <li><a href="./products.html">Mahsulotlar</a></li>
+              <li><a href="./about.html">Biz haqimizda</a></li>
+              <li><a href="./prices.html">Narxlar</a></li>
+              <li><a href="./index.html">Chegirmalar</a></li>
+              <li><a href="./index.html">Yangi kelganlar</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4>Mijozlar uchun</h4>
+            <ul>
+              <li><a href="#">Mening hisobim</a></li>
+              <li><a href="#">Buyurtmalar tarixi</a></li>
+              <li><a href="./liked.html">Sevimlilar</a></li>
+              <li><a href="#">Kafolat</a></li>
+              <li><a href="#">Yetkazib berish</a></li>
+              <li><a href="#">Qaytarish</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <h4>Bog'lanish</h4>
+            <div class="contact-item">
+              <img src="/assets/phone.png" alt="Telefon" />
+              <div>
+                <strong>Telefon raqam</strong>
+                <p>+998 97 424 94 84</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <img src="/assets/mail.png" alt="Email" />
+              <div>
+                <strong>Email manzil</strong>
+                <p>info@techhouse.uz</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <img src="/assets/location.png" alt="Manzil" />
+              <div>
+                <strong>Ofis manzili</strong>
+                <p>Toshkent sh.</p>
+              </div>
+            </div>
+            <div class="footer-newsletter">
+              <h5>Yangiliklardan xabardor bo'ling</h5>
+              <div class="newsletter-form">
+                <input type="email" placeholder="Email manzilingiz" />
+                <button type="submit">Obuna bo'lish</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 TechHouse. Barcha huquqlar himoyalangan.</p>
+
+          <div class="copyright">
+            <div class="footer-legal">
+              <a href="#">Maxfiylik siyosati</a>
+              <a href="#">Foydalanish shartlari</a>
+              <a href="#">Cookie sozlamalari</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

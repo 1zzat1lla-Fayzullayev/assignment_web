@@ -1,0 +1,588 @@
+<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechHouse | Mahsulotlar</title>
+    <link rel="stylesheet" href="../style.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="container nav">
+        <div class="logo">Tech<span class="logo_section">House</span></div>
+        <nav class="menu">
+          <a href="./index.html">Asosiy</a>
+          <a href="./products.html">Mahsulotlar</a>
+          <a href="./about.html">Biz haqimizda</a>
+          <a href="./prices.html">Narxlar</a>
+        </nav>
+        <div class="actions">
+          <button class="action action-search" type="button">
+            <img src="../assets/search.png" alt="Qidiruv" />
+            <span>Qidiruv</span>
+          </button>
+          <div class="action-search-box">
+            <input
+              class="header-search-input"
+              type="text"
+              placeholder="Mahsulot qidiring..."
+            />
+            <button class="header-search-close" type="button">✕</button>
+          </div>
+          <a class="action" href="./checkout.html">
+            <img src="../assets/shopping-cart.png" alt="Savatcha" />
+            <span>Savatcha</span>
+            <span class="action-badge cart-count is-hidden">0</span>
+          </a>
+          <a class="action" href="./liked.html">
+            <img src="../assets/like.png" alt="Sevimlilar" />
+            <span>Sevimlilar</span>
+            <span class="action-badge fav-count is-hidden">0</span>
+          </a>
+          <a class="action" href="./index.html">
+            <img src="../assets/user.png" alt="Kirish" />
+            <span>Kirish</span>
+          </a>
+        </div>
+        <div class="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </header>
+
+    <div class="mobile-menu">
+      <a href="./index.html">Asosiy</a>
+      <a href="./products.html">Mahsulotlar</a>
+      <a href="./about.html">Biz haqimizda</a>
+      <a href="./prices.html">Narxlar</a>
+
+      <div class="mobile-actions">
+        <a href="./products.html">Qidiruv</a>
+        <a href="./index.html">Kirish</a>
+        <a href="./liked.html">Sevimlilar</a>
+        <a href="./checkout.html">Savatcha</a>
+      </div>
+    </div>
+
+    <main class="products-page">
+      <section class="container">
+        <div class="search-panel">
+          <div class="search-box">
+            <img src="../assets/search.png" alt="Qidiruv" />
+            <input
+              class="products-search"
+              type="text"
+              placeholder="Mahsulot qidiring..."
+            />
+            <button class="search-btn">Qidirish</button>
+          </div>
+        </div>
+
+        <section class="category-browse">
+          <h3>Kategoriyalar bo'yicha ko'rish</h3>
+          <div class="category-chips">
+            <button
+              class="category-chip active"
+              data-category="all"
+              data-label="Mahsulotlar"
+            >
+              Barchasi
+            </button>
+            <button
+              class="category-chip"
+              data-category="kitchen"
+              data-label="Oshxona jihozlari"
+            >
+              Oshxona jihozlari
+            </button>
+            <button
+              class="category-chip"
+              data-category="cleaning"
+              data-label="Tozalash uskunalari"
+            >
+              Tozalash uskunalari
+            </button>
+            <button
+              class="category-chip"
+              data-category="heating-cooling"
+              data-label="Isitish va sovutish moslamalari"
+            >
+              Isitish va sovutish moslamalari
+            </button>
+            <button
+              class="category-chip"
+              data-category="personal-care"
+              data-label="Shaxsiy parvarish vositalari"
+            >
+              Shaxsiy parvarish vositalari
+            </button>
+            <button
+              class="category-chip"
+              data-category="smart-home"
+              data-label="Uy jihozlari"
+            >
+              Uy jihozlari
+            </button>
+          </div>
+        </section>
+
+        <div class="products-layout">
+          <aside class="filters-card">
+            <div class="filters-header">
+              <h3>Filters</h3>
+              <button class="clear-filters">Barchasini tozalash</button>
+            </div>
+
+            <div class="filter-group">
+              <h4>Kategoriya</h4>
+              <label
+                ><input
+                  type="checkbox"
+                  data-filter="category"
+                  value="kitchen"
+                />
+                Oshxona jihozlari</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  data-filter="category"
+                  value="cleaning"
+                />
+                Tozalash uskunalari</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  data-filter="category"
+                  value="heating-cooling"
+                />
+                Isitish va sovutish moslamalari</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  data-filter="category"
+                  value="personal-care"
+                />
+                Shaxsiy parvarish vositalari</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  data-filter="category"
+                  value="smart-home"
+                />
+                Uy jihozlari</label
+              >
+            </div>
+
+            <div class="filter-group">
+              <h4>Narxlar oralig'i</h4>
+              <label
+                ><input
+                  type="checkbox"
+                  data-filter="price"
+                  data-max="5000000"
+                />
+                5.000.000 so'mdan kam</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  data-filter="price"
+                  data-min="5000000"
+                  data-max="7000000"
+                />
+                5.000.000 - 7.000.000</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  data-filter="price"
+                  data-min="7000000"
+                  data-max="10000000"
+                  checked
+                />
+                7.000.000 - 10.000.000</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  data-filter="price"
+                  data-min="10000000"
+                />
+                10.000.000 dan ortiq</label
+              >
+            </div>
+
+            <div class="filter-group">
+              <h4>Ranglar</h4>
+              <div class="color-filter">
+                <button data-color="black" style="background: #111827"></button>
+                <button data-color="white" style="background: #f8fafc"></button>
+                <button data-color="blue" style="background: #3b82f6"></button>
+                <button data-color="red" style="background: #ef4444"></button>
+                <button data-color="green" style="background: #10b981"></button>
+              </div>
+            </div>
+
+            <div class="filter-group">
+              <h4>Reyting</h4>
+              <label
+                ><input
+                  type="checkbox"
+                  data-filter="rating"
+                  data-min="4"
+                  checked
+                />
+                ★ 4+ Yulduzcha</label
+              >
+              <label
+                ><input type="checkbox" data-filter="rating" data-min="3" /> ★
+                3+ Yulduzcha</label
+              >
+              <label
+                ><input type="checkbox" data-filter="rating" data-min="2" /> ★
+                2+ Yulduzcha</label
+              >
+              <label
+                ><input type="checkbox" data-filter="rating" data-min="1" /> ★
+                1+ Yulduzcha</label
+              >
+            </div>
+          </aside>
+
+          <div class="products-content">
+            <div class="results-bar">
+              <div class="results-text">
+                "<span class="query-text">Mahsulotlar</span>" uchun
+                <span class="results-count">48</span> ta natija ko'rsatilmoqda
+              </div>
+              <div class="sort-buttons">
+                <button class="sort-btn active" data-sort="price-asc">
+                  Narxi: Pastdan yuqorigacha
+                </button>
+                <button class="sort-btn" data-sort="price-desc">
+                  Narxi: Yuqoridan pastgacha
+                </button>
+                <button class="sort-btn" data-sort="newest">Eng yangisi</button>
+              </div>
+            </div>
+
+            <div class="product-grid">
+              <a
+                class="product-tile"
+                href="./product.html"
+                data-id="201"
+                data-name="KitchenPro Blender 800W"
+                data-price="1450000"
+                data-rating="4.4"
+                data-category="kitchen"
+                data-color="white"
+                data-created="20240212"
+              >
+                <div class="tile-top">
+                  <img src="../assets/product.png" alt="Blender" />
+                  <button class="tile-fav">♡</button>
+                </div>
+                <h4>KitchenPro Blender 800W</h4>
+                <div class="tile-rating">★★★★☆ <span>(26)</span></div>
+                <div class="tile-actions">
+                  <div class="tile-price">1 450 000 so'm</div>
+                  <button class="tile-cart">Savatchaga</button>
+                </div>
+              </a>
+              <a
+                class="product-tile"
+                href="./product.html"
+                data-id="202"
+                data-name="MixMaster Stand Mixer"
+                data-price="2650000"
+                data-rating="4.8"
+                data-category="kitchen"
+                data-color="black"
+                data-created="20240118"
+              >
+                <div class="tile-top">
+                  <img src="../assets/product.png" alt="Mikser" />
+                  <button class="tile-fav">♡</button>
+                </div>
+                <h4>MixMaster Stand Mixer</h4>
+                <div class="tile-rating">★★★★★ <span>(41)</span></div>
+                <div class="tile-actions">
+                  <div class="tile-price">2 650 000 so'm</div>
+                  <button class="tile-cart">Savatchaga</button>
+                </div>
+              </a>
+              <a
+                class="product-tile"
+                href="./product.html"
+                data-id="203"
+                data-name="WaveMic Microwave 25L"
+                data-price="1890000"
+                data-rating="4.2"
+                data-category="kitchen"
+                data-color="red"
+                data-created="20231225"
+              >
+                <div class="tile-top">
+                  <img src="../assets/product.png" alt="Mikroto'lqinli pech" />
+                  <button class="tile-fav">♡</button>
+                </div>
+                <h4>WaveMic Microwave 25L</h4>
+                <div class="tile-rating">★★★★☆ <span>(19)</span></div>
+                <div class="tile-actions">
+                  <div class="tile-price">1 890 000 so'm</div>
+                  <button class="tile-cart">Savatchaga</button>
+                </div>
+              </a>
+              <a
+                class="product-tile"
+                href="./product.html"
+                data-id="204"
+                data-name="CleanMax Vacuum Pro"
+                data-price="2350000"
+                data-rating="4.6"
+                data-category="cleaning"
+                data-color="blue"
+                data-created="20240202"
+              >
+                <div class="tile-top">
+                  <img src="../assets/product.png" alt="Changyutgich" />
+                  <button class="tile-fav">♡</button>
+                </div>
+                <h4>CleanMax Vacuum Pro</h4>
+                <div class="tile-rating">★★★★★ <span>(64)</span></div>
+                <div class="tile-actions">
+                  <div class="tile-price">2 350 000 so'm</div>
+                  <button class="tile-cart">Savatchaga</button>
+                </div>
+              </a>
+              <a
+                class="product-tile"
+                href="./product.html"
+                data-id="205"
+                data-name="SteamClean Pro 2-in-1"
+                data-price="2100000"
+                data-rating="4.3"
+                data-category="cleaning"
+                data-color="white"
+                data-created="20231120"
+              >
+                <div class="tile-top">
+                  <img src="../assets/product.png" alt="Bug'li tozalagich" />
+                  <button class="tile-fav">♡</button>
+                </div>
+                <h4>SteamClean Pro 2-in-1</h4>
+                <div class="tile-rating">★★★★☆ <span>(27)</span></div>
+                <div class="tile-actions">
+                  <div class="tile-price">2 100 000 so'm</div>
+                  <button class="tile-cart">Savatchaga</button>
+                </div>
+              </a>
+              <a
+                class="product-tile"
+                href="./product.html"
+                data-id="206"
+                data-name="CoolAir Split 12K"
+                data-price="6900000"
+                data-rating="4.5"
+                data-category="heating-cooling"
+                data-color="black"
+                data-created="20240105"
+              >
+                <div class="tile-top">
+                  <img src="../assets/product.png" alt="Konditsioner" />
+                  <button class="tile-fav">♡</button>
+                </div>
+                <h4>CoolAir Split 12K</h4>
+                <div class="tile-rating">★★★★☆ <span>(53)</span></div>
+                <div class="tile-actions">
+                  <div class="tile-price">6 900 000 so'm</div>
+                  <button class="tile-cart">Savatchaga</button>
+                </div>
+              </a>
+              <a
+                class="product-tile"
+                href="./product.html"
+                data-id="207"
+                data-name="HeatWave Electric Heater"
+                data-price="890000"
+                data-rating="4.1"
+                data-category="heating-cooling"
+                data-color="red"
+                data-created="20231018"
+              >
+                <div class="tile-top">
+                  <img src="../assets/product.png" alt="Isitgich" />
+                  <button class="tile-fav">♡</button>
+                </div>
+                <h4>HeatWave Electric Heater</h4>
+                <div class="tile-rating">★★★★☆ <span>(76)</span></div>
+                <div class="tile-actions">
+                  <div class="tile-price">890 000 so'm</div>
+                  <button class="tile-cart">Savatchaga</button>
+                </div>
+              </a>
+              <a
+                class="product-tile"
+                href="./product.html"
+                data-id="208"
+                data-name="StyleDry Hair Dryer"
+                data-price="520000"
+                data-rating="3.9"
+                data-category="personal-care"
+                data-color="green"
+                data-created="20230912"
+              >
+                <div class="tile-top">
+                  <img src="../assets/product.png" alt="Fen" />
+                  <button class="tile-fav">♡</button>
+                </div>
+                <h4>StyleDry Hair Dryer</h4>
+                <div class="tile-rating">★★★☆☆ <span>(18)</span></div>
+                <div class="tile-actions">
+                  <div class="tile-price">520 000 so'm</div>
+                  <button class="tile-cart">Savatchaga</button>
+                </div>
+              </a>
+              <a
+                class="product-tile"
+                href="./product.html"
+                data-id="209"
+                data-name="SmartHome Camera 2K"
+                data-price="1250000"
+                data-rating="4.6"
+                data-category="smart-home"
+                data-color="black"
+                data-created="20240222"
+              >
+                <div class="tile-top">
+                  <img src="../assets/product.png" alt="Smart kamera" />
+                  <button class="tile-fav">♡</button>
+                </div>
+                <h4>SmartHome Camera 2K</h4>
+                <div class="tile-rating">★★★★★ <span>(34)</span></div>
+                <div class="tile-actions">
+                  <div class="tile-price">1 250 000 so'm</div>
+                  <button class="tile-cart">Savatchaga</button>
+                </div>
+              </a>
+            </div>
+            <div class="empty-state is-hidden">
+              Hech qanday mahsulot topilmadi. Filtrlarni o'zgartirib ko'ring.
+            </div>
+
+            <div class="pagination">
+              <button class="page-btn">Oldingi</button>
+              <button class="page-btn active">1</button>
+              <button class="page-btn">2</button>
+              <button class="page-btn">3</button>
+              <button class="page-btn">4</button>
+              <button class="page-btn">Keyingi</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-main">
+          <div class="footer-brand">
+            <div class="logo footer-logo">
+              Tech<span class="logo_section">House</span>
+            </div>
+            <p class="footer-description">
+              Zamonaviy va ishonchli maishiy texnika do'koni. Yuqori sifat,
+              qulay narxlar va tezkor yetkazib berish.
+            </p>
+            <div class="footer-social">
+              <a href="#" class="social-icon">
+                <img src="/assets/facebook.png" alt="Facebook" />
+              </a>
+              <a href="#" class="social-icon">
+                <img src="/assets/instagram.png" alt="Instagram" />
+              </a>
+              <a href="#" class="social-icon">
+                <img src="/assets/telegram.png" alt="Telegram" />
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <h4>Tezkor havolalar</h4>
+            <ul>
+              <li><a href="./index.html">Asosiy</a></li>
+              <li><a href="./products.html">Mahsulotlar</a></li>
+              <li><a href="./about.html">Biz haqimizda</a></li>
+              <li><a href="./prices.html">Narxlar</a></li>
+              <li><a href="./index.html">Chegirmalar</a></li>
+              <li><a href="./index.html">Yangi kelganlar</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4>Mijozlar uchun</h4>
+            <ul>
+              <li><a href="#">Mening hisobim</a></li>
+              <li><a href="#">Buyurtmalar tarixi</a></li>
+              <li><a href="./liked.html">Sevimlilar</a></li>
+              <li><a href="#">Kafolat</a></li>
+              <li><a href="#">Yetkazib berish</a></li>
+              <li><a href="#">Qaytarish</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <h4>Bog'lanish</h4>
+            <div class="contact-item">
+              <img src="/assets/phone.png" alt="Telefon" />
+              <div>
+                <strong>Telefon raqam</strong>
+                <p>+998 97 424 94 84</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <img src="/assets/mail.png" alt="Email" />
+              <div>
+                <strong>Email manzil</strong>
+                <p>info@techhouse.uz</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <img src="/assets/location.png" alt="Manzil" />
+              <div>
+                <strong>Ofis manzili</strong>
+                <p>Toshkent sh.</p>
+              </div>
+            </div>
+            <div class="footer-newsletter">
+              <h5>Yangiliklardan xabardor bo'ling</h5>
+              <div class="newsletter-form">
+                <input type="email" placeholder="Email manzilingiz" />
+                <button type="submit">Obuna bo'lish</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 TechHouse. Barcha huquqlar himoyalangan.</p>
+
+          <div class="copyright">
+            <div class="footer-legal">
+              <a href="#">Maxfiylik siyosati</a>
+              <a href="#">Foydalanish shartlari</a>
+              <a href="#">Cookie sozlamalari</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

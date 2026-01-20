@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechHouse</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./app.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container nav">
+        <div class="logo">Tech<span class="logo_section">House</span></div>
+        <nav class="menu">
+          <a href="./index.html">Asosiy</a>
+          <a href="./products.html">Mahsulotlar</a>
+          <a href="./about.html">Biz haqimizda</a>
+          <a href="./prices.html">Narxlar</a>
+        </nav>
+        <div class="actions">
+          <button class="action action-search" type="button">
+            <img src="./assets/search.png" alt="Qidiruv" />
+            <span>Qidiruv</span>
+          </button>
+          <div class="action-search-box">
+            <input
+              class="header-search-input"
+              type="text"
+              placeholder="Mahsulot qidiring..."
+            />
+            <button class="header-search-close" type="button">✕</button>
+          </div>
+          <a class="action" href="./checkout.html">
+            <img src="./assets/shopping-cart.png" alt="Savatcha" />
+            <span>Savatcha</span>
+            <span class="action-badge cart-count is-hidden">0</span>
+          </a>
+          <a class="action" href="./liked.html">
+            <img src="./assets/like.png" alt="Sevimlilar" />
+            <span>Sevimlilar</span>
+            <span class="action-badge fav-count is-hidden">0</span>
+          </a>
+
+          <a class="action" href="./index.html">
+            <img src="./assets/user.png" alt="Kirish" />
+            <span>Kirish</span>
+          </a>
+        </div>
+        <div class="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </header>
+
+    <div class="mobile-menu">
+      <a href="./index.html">Asosiy</a>
+      <a href="./products.html">Mahsulotlar</a>
+      <a href="./about.html">Biz haqimizda</a>
+      <a href="./prices.html">Narxlar</a>
+
+      <div class="mobile-actions">
+        <a href="./index.html">Qidiruv</a>
+        <a href="./index.html">Kirish</a>
+        <a href="./liked.html">Sevimlilar</a>
+        <a href="./checkout.html">Savatcha</a>
+      </div>
+    </div>
+
+    <section class="hero">
+      <div class="container hero-wrap">
+        <div class="hero-text">
+          <h1>Aqlli texnologiyalar <br /><span>uyingiz uchun</span></h1>
+          <p>
+            TechHouse — zamonaviy va ishonchli maishiy texnika do'koni. Yuqori
+            sifat, qulay narxlar va tezkor yetkazib berish.
+          </p>
+          <div class="hero-btns">
+            <button class="btn outline">
+              <a href="./products.html">Hozir xarid qilish</a>
+            </button>
+            <button class="btn primary">
+              <a href="#checkout">Chegirmalarni ko'rish</a>
+            </button>
+          </div>
+        </div>
+        <div class="hero-media">
+          <img src="./assets/hero.png" alt="TV" />
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <h2 class="section-title">Ommabop mahsulotlar</h2>
+      <div class="products" id="trending-products"></div>
+    </section>
+
+    <section class="container">
+      <h2 class="section-title">Yangi mahsulotlar</h2>
+      <div class="products" id="new-products"></div>
+    </section>
+
+    <section class="container" id="checkout">
+      <h2 class="section-title">Mavsumiy chegirmalar</h2>
+
+      <div class="season-swiper swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="season-card">
+              <div class="season-left">
+                <img src="./assets/product_2.png" alt="Kofevarka Polaris" />
+              </div>
+
+              <div class="season-center">
+                <h3>Кофеварка Polaris PCM</h3>
+                <span class="installment">381 084 so'mdan / 18 oy</span>
+                <div class="prices">
+                  <span class="old-price">2 233 000 so'm</span>
+                  <span class="new-price">1 570 000 so'm</span>
+                </div>
+                <button
+                  class="season-btn add-to-cart-season"
+                  data-id="101"
+                  data-name="Кофеварка Polaris PCM"
+                  data-price="1570000"
+                  data-image="./assets/product_2.png"
+                >
+                  Buyurtma berish
+                </button>
+              </div>
+
+              <div class="season-right">
+                <div class="discount-label">Chegirma</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="season-card">
+              <div class="season-left">
+                <img src="./assets/tv.png" alt="TV Samsung" />
+              </div>
+
+              <div class="season-center">
+                <h3>Samsung TV 55" QLED</h3>
+                <span class="installment">500 000 so'mdan / 12 oy</span>
+                <div class="prices">
+                  <span class="old-price">8 000 000 so'm</span>
+                  <span class="new-price">6 500 000 so'm</span>
+                </div>
+                <button
+                  class="season-btn add-to-cart-season"
+                  data-id="102"
+                  data-name="Samsung TV 55' QLED"
+                  data-price="6500000"
+                  data-image="./assets/tv.png"
+                >
+                  Buyurtma berish
+                </button>
+              </div>
+
+              <div class="season-right">
+                <div class="discount-label">Chegirma</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="season-card">
+              <div class="season-left">
+                <img
+                  src="./assets/kir_yuvish_mashinasi.png"
+                  alt="Kir yuvish mashinasi"
+                />
+              </div>
+
+              <div class="season-center">
+                <h3>Kir yuvish mashinasi LG</h3>
+                <span class="installment">450 000 so'mdan / 15 oy</span>
+                <div class="prices">
+                  <span class="old-price">5 800 000 so'm</span>
+                  <span class="new-price">4 500 000 so'm</span>
+                </div>
+                <button
+                  class="season-btn add-to-cart-season"
+                  data-id="103"
+                  data-name="Kir yuvish mashinasi LG"
+                  data-price="4500000"
+                  data-image="./assets/kir_yuvish_mashinasi.png"
+                >
+                  Buyurtma berish
+                </button>
+              </div>
+
+              <div class="season-right">
+                <div class="discount-badge">25%</div>
+                <div class="discount-label">Chegirma</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <section class="container">
+      <h2 class="section-title">Eng ko'p sotilganlar</h2>
+      <div class="products" id="best-selling-products"></div>
+    </section>
+
+    <section class="container">
+      <h2 class="section-title">Nimaga aynan biz?</h2>
+
+      <div class="benefits">
+        <div class="benefit">
+          <div class="benefit-icon">
+            <img src="/assets/truck.png" alt="Yetkazib berish" />
+          </div>
+          <div class="benefit-text">
+            <h4>Bepul yetkazib berish</h4>
+            <p>Butun O'zbekiston bo'ylab tezkor yetkazib berish</p>
+          </div>
+        </div>
+
+        <div class="benefit">
+          <div class="benefit-icon">
+            <img src="/assets/check.png" alt="Kafolat" />
+          </div>
+          <div class="benefit-text">
+            <h4>Rasmiy kafolat</h4>
+            <p>Barcha mahsulotlarga rasmiy kafolat</p>
+          </div>
+        </div>
+
+        <div class="benefit">
+          <div class="benefit-icon">
+            <img src="/assets/package.png" alt="O'rnatish" />
+          </div>
+          <div class="benefit-text">
+            <h4>O'rnatib berish</h4>
+            <p>Mutaxassislar tomonidan o'rnatib beriladi</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <h2 class="section-title">A'zolik paketlari</h2>
+      <div class="pricing">
+        <div class="plan">
+          <span class="price_plan">BRONZA</span>
+          <div class="price">$15/mo</div>
+          <div class="plan-features">
+            <div class="feature-item">
+              <span class="feature-check">✓</span>
+              <span>Asosiy sodiqlik ballari</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-check">✓</span>
+              <span>Tanlangan chegirmalarga kirish</span>
+            </div>
+          </div>
+          <button class="plan-btn">Boshlash</button>
+        </div>
+
+        <div class="plan">
+          <span class="price_plan">KUMUSH</span>
+          <div class="price">$15/mo</div>
+          <div class="plan-features">
+            <div class="feature-item">
+              <span class="feature-check">✓</span>
+              <span>Ko'proq sodiqlik ballari</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-check">✓</span>
+              <span>Ustuvor mijozlarni qo'llab-quvvatlash</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-check">✓</span>
+              <span>Oylik maxsus takliflar</span>
+            </div>
+          </div>
+          <button class="plan-btn">Boshlash</button>
+        </div>
+
+        <div class="plan">
+          <span class="price_plan">OLTIN</span>
+          <div class="price">$30/mo</div>
+          <div class="plan-features">
+            <div class="feature-item">
+              <span class="feature-check">✓</span>
+              <span>Eng yuqori sodiqlik mukofotlari</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-check">✓</span>
+              <span>Bepul yetkazib berish</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-check">✓</span>
+              <span>Yangi mahsulotlarga erta kirish imkoniyati</span>
+            </div>
+          </div>
+          <button class="plan-btn">Boshlash</button>
+        </div>
+
+        <div class="plan">
+          <span class="price_plan">BIZNES</span>
+          <div class="price">$30/mo</div>
+          <div class="plan-features">
+            <div class="feature-item">
+              <span class="feature-check">✓</span>
+              <span>Katta hajmda sotib olish imkoniyati</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-check">✓</span>
+              <span>Korxonalar uchun individual narxlar</span>
+            </div>
+          </div>
+          <button class="plan-btn">Boshlash</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <h2 class="section-title">Mijozlar fikri</h2>
+      <div class="reviews">
+        <div class="review">
+          <div class="review-header">
+            <img src="/assets/man.png" alt="Mijoz" />
+            <div class="review-info">
+              <strong>Eshmat Toshmatov</strong>
+              <div class="review-rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="rating-text">5.0</span>
+              </div>
+            </div>
+          </div>
+          <p class="review-text">
+            "Judayam zo'r xizmat! Mahsulot o'z vaqtida yetkazildi, sifat ajoyib.
+            Tavsiya qilaman!"
+          </p>
+          <div class="review-date">12 Yanvar, 2024</div>
+        </div>
+
+        <div class="review">
+          <div class="review-header">
+            <img src="/assets/man.png" alt="Mijoz" />
+            <div class="review-info">
+              <strong>Anvar Karimov</strong>
+              <div class="review-rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star half">★</span>
+                <span class="rating-text">4.5</span>
+              </div>
+            </div>
+          </div>
+          <p class="review-text">
+            "Mahsulotlar sifatli, narxlar ham o'rtacha. Yetkazib berish tez va
+            xodimlar muloyim."
+          </p>
+          <div class="review-date">5 Yanvar, 2024</div>
+        </div>
+
+        <div class="review">
+          <div class="review-header">
+            <img src="/assets/man.png" alt="Mijoz" />
+            <div class="review-info">
+              <strong>Malika Ismoilova</strong>
+              <div class="review-rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="rating-text">5.0</span>
+              </div>
+            </div>
+          </div>
+          <p class="review-text">
+            "TezHouse - mening eng ishonchli maishiy texnika do'konim. Har doim
+            yangi mahsulotlar va ajoyib chegirmalar!"
+          </p>
+          <div class="review-date">28 Dekabr, 2023</div>
+        </div>
+
+        <div class="review">
+          <div class="review-header">
+            <img src="/assets/man.png" alt="Mijoz" />
+            <div class="review-info">
+              <strong>Shohruh Bekmurodov</strong>
+              <div class="review-rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="rating-text">5.0</span>
+              </div>
+            </div>
+          </div>
+          <p class="review-text">
+            "Barcha mahsulotlarni sinab ko'rdim - hammasi zo'r! Xizmat sifatiga
+            hech qanday shikoyatim yo'q."
+          </p>
+          <div class="review-date">20 Dekabr, 2023</div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-main">
+          <div class="footer-brand">
+            <div class="logo footer-logo">
+              Tech<span class="logo_section">House</span>
+            </div>
+            <p class="footer-description">
+              Zamonaviy va ishonchli maishiy texnika do'koni. Yuqori sifat,
+              qulay narxlar va tezkor yetkazib berish.
+            </p>
+            <div class="footer-social">
+              <a href="#" class="social-icon">
+                <img src="/assets/facebook.png" alt="Facebook" />
+              </a>
+              <a href="#" class="social-icon">
+                <img src="/assets/instagram.png" alt="Instagram" />
+              </a>
+              <a href="#" class="social-icon">
+                <img src="/assets/telegram.png" alt="Telegram" />
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <h4>Tezkor havolalar</h4>
+            <ul>
+              <li><a href="./index.html">Asosiy</a></li>
+              <li><a href="./products.html">Mahsulotlar</a></li>
+              <li><a href="./about.html">Biz haqimizda</a></li>
+              <li><a href="./prices.html">Narxlar</a></li>
+              <li><a href="./index.html">Chegirmalar</a></li>
+              <li><a href="./index.html">Yangi kelganlar</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4>Mijozlar uchun</h4>
+            <ul>
+              <li><a href="#">Mening hisobim</a></li>
+              <li><a href="#">Buyurtmalar tarixi</a></li>
+              <li><a href="./liked.html">Sevimlilar</a></li>
+              <li><a href="#">Kafolat</a></li>
+              <li><a href="#">Yetkazib berish</a></li>
+              <li><a href="#">Qaytarish</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <h4>Bog'lanish</h4>
+            <div class="contact-item">
+              <img src="/assets/phone.png" alt="Telefon" />
+              <div>
+                <strong>Telefon raqam</strong>
+                <p>+998 97 424 94 84</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <img src="/assets/mail.png" alt="Email" />
+              <div>
+                <strong>Email manzil</strong>
+                <p>info@techhouse.uz</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <img src="/assets/location.png" alt="Manzil" />
+              <div>
+                <strong>Ofis manzili</strong>
+                <p>Toshkent sh.</p>
+              </div>
+            </div>
+            <div class="footer-newsletter">
+              <h5>Yangiliklardan xabardor bo'ling</h5>
+              <div class="newsletter-form">
+                <input type="email" placeholder="Email manzilingiz" />
+                <button type="submit">Obuna bo'lish</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 TechHouse. Barcha huquqlar himoyalangan.</p>
+
+          <div class="copyright">
+            <div class="footer-legal">
+              <a href="#">Maxfiylik siyosati</a>
+              <a href="#">Foydalanish shartlari</a>
+              <a href="#">Cookie sozlamalari</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  </body>
+</html>

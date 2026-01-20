@@ -1,0 +1,18 @@
+{
+  "products": [
+    {
+      "id": 101,
+      "name": "Honor X9c 256GB",
+      "price": "22 000 000 so'm",
+      "image": "../assets/product.png",
+      "nasiya": "381 084 so'mdan / 18 oy"
+    },
+    {
+      "id": 102,
+      "name": "Samsung Galaxy S23",
+      "price": "22 000 000 so'm",
+      "image": "../assets/product.png",
+      "nasiya": "820 000 so'mdan / 12 oy"
+    }
+  ]
+}
