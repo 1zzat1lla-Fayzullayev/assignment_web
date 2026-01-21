@@ -2373,6 +2373,7 @@ footer {
 .search-box {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 12px;
   background: white;
   border: 1px solid var(--border);
@@ -2387,10 +2388,17 @@ footer {
 }
 
 .search-box input {
+  width: 100%;
   flex: 1;
   border: none;
   outline: none;
   font-size: 14px;
+}
+
+.search-input-box{
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .search-btn {
@@ -2475,6 +2483,7 @@ footer {
 .products-content {
   display: grid;
   gap: 18px;
+  width: 100%;
 }
 
 .results-bar {
@@ -2515,7 +2524,13 @@ footer {
   gap: 18px;
 }
 
-/* Liked page minimal design */
+@media screen and (max-width: 776px) {
+  .search-box{
+    border-radius: 10px;
+    flex-direction: column;
+  }
+}
+
 .liked-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
